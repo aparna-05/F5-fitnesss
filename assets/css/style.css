@@ -104,6 +104,7 @@ body {
   margin: 0;
   color: #fff;
   overflow-x: hidden;
+  line-height: 0.9;
   font-family: var(--body-font); }
 
 @media only screen and (min-width: 768px) {
@@ -1338,7 +1339,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 .breadcrumb-style-1 {
   background-color: #F9F9FA;
-  min-height: 421px;
+  min-height: 600px;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1705,7 +1706,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
-  height: 500px;
+  height: 400px;
   width: 100%; }
 
 .mapouter1 {
@@ -5589,7 +5590,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   margin-top: 127px;
   background: #88C13E; }
   .explore-area.explore-bg {
-    background: url(../img/home/explore.png);
+    background: url(../img/home/explore2.png);
     background-size: cover;
     background-repeat: no-repeat; }
   .explore-area.explore-bg2 {
