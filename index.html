@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>F5 Fitness </title>
+     <!-- favicon -->
+     <link rel=icon href=assets/img/favicon.png sizes="20x20" type="image/png">
+    <!-- animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <!-- nice select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css"> 
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!-- hamburgers -->
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <!-- hamburgers -->
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <!-- twentytwenty -->
+    <link rel="stylesheet" href="assets/css/twentytwenty.css">
+    <!-- Date Picker -->
+    <link href="assets/css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <!-- Time Picker -->
+    <link rel="stylesheet" href="assets/css/wickedpicker.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive Stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .column1 {
+            /*float: center;*/
+            width: 49.99%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+<div class="info-popup">
+    <div class="info-popup-content">
+        <button type="button" class="info-popup-content_close">X</button>
+        <div class="row no-gutters">
+            <div class="col-xl-7 col-12 col-sm-6">
+                <div class="info-popup-content__img info-popup-content__img--one"></div>
+            </div>
+            <div class="col-xl-5 col-12 col-sm-6">
+                <div class="info-popup-content__text">
+                    <h3 class="location-popup-content__title">Contact</h3><br>
+                    <div class="info-popup-content__text-footer">
+                        <span class="info-popup-content__text-is"> +91 98455 40704</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--info-popup-->
+
+<div class="location-popup">
+    <div class="location-popup-content">
+        <button type="button" class="message-popup-content_close">X</button>
+        <div class="row no-gutters">
+            <div class="col-lg-7 col-12 col-sm-6">
+                <div class="mapouter1">
+                    <div class="gmap_canvas1">
+                        <div style="width: 100%"><iframe width="100%" height="374" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=RVC%20Tower%20%23310%2C%202nd%20Floor%2C%20Kalkere%20K.%20Channasandra%20Main%20Road%2C%20Next%20to%20Kalkere%20Bus%20Stand%20Bengaluru+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">gps coordinates</a></iframe></div><br />
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12 col-sm-6">
+                <div class="location-popup-content__text">
+                    <div class="location-popup-content__text-header">
+                        <h3 class="location-popup-content__title">Address</h3>
+                    </div>
+                    <div class="location-popup-content__text-body">
+                            <span class="location-popup-content__text-is">
+                               RVC Tower #310, 2nd Floor,
+                                        Kalkere K. Channasandra Main Road,
+                                        Next to Kalkere Bus Stand Bengaluru - 560 043
+                            </span>
+                    </div>
+                    <div class="btn-wrapper desktop-center">
+                        <a href="https://www.google.com/maps?ll=0,0&z=1&t=m&hl=en&gl=US&mapclient=embed&q=RVC+Tower+%23310,+2nd+Floor,+Kalkere+K.+Channasandra+Main+Road,+Next+to+Kalkere+Bus+Stand+Bengaluru" target="_blank" class="btn btn-element btn-normal-size btn-main-color btn-rounded">Open in maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--location-popup-->
+
+<div class="message-popup">
+    <div class="message-popup-content">
+        <button type="button" class="message-popup-content_close">X</button>
+        <div class="row no-gutters">
+            <div class="col-lg-7 col-12 col-sm-6">
+                <div class="message-popup-content__text text-left pl-5">
+                    <div class="message-popup-content__text-header">
+                        <h3 class="message-popup-content__title mb-3">
+                            You have a question for us?
+                        </h3>
+                    </div>
+                    <div class="message-popup-content__text-body">
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12 margin-top-20">
+                                    <input type="text" placeholder="Email address" class="contact-form__input"/>
+                                </div>
+                                <div class="col-12 margin-top-20">
+                                    <textarea name="Message" placeholder="Message" class="contact-form__textarea" cols="30" rows="2" ></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn-wrapper desktop-center margin-top-40">
+                                        <a href="#" class="btn btn-element btn-normal-size btn-main-color btn-rounded">Send Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12 col-sm-6">
+                <div class="message-popup-content__img message-popup-content__img--three"></div>
+            </div>
+        </div>
+    </div>
+</div><!--message-popup-->
+<!-- navbar start -->
+    <div class="zarxio-navbar">
+        <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#billatrail_main_menu" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a href="index.html"><h3 style="color: white">F5  <span style="color: #88C13E;">FITNESS</span></h3></a>
+                </div>
+                <div class="collapse navbar-collapse" id="billatrail_main_menu">
+                    <ul class="navbar-nav menu-open">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- banner start -->
+    <div class="banner-area banner-style-one" style="background-image:url(images/header1.jpg);" >
+        
+        <div class="border1"></div>
+        <div class="border2"></div>
+        <div class="border3"></div>
+        <div class="border4"></div>
+
+        <div class="banner-slider banner-slide1">
+            <div class="banner-bg-style-one">
+                <div class="container">
+                    <div class="row h-100vh">
+                        <div class="col-lg-6">
+                            <div class="banner-inner-style-one">
+                                <p data-animation-in="fadeInLeft">FUEL YOUR</p>
+                                <h1 class="title1" data-animation-in="fadeInDown"> <span class="color-main">BODY</span> FITNESS</h1>
+                                <div class="btn-wrapper" data-animation-in="fadeInUp">
+                                    <a  class="btn btn-slider">Be one of us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-bg-style-one" >
+                <div class="container">
+                    <div class="row h-100vh">
+                        <div class="col-lg-6">
+                            <div class="banner-inner-style-one">
+                                <p data-animation-in="fadeInLeft">Improve</p>
+                                <h1 class="title1" data-animation-in="fadeInDown"> <span class="color-main">Your</span> Health</h1>
+                                <div class="btn-wrapper" data-animation-in="fadeInUp">
+                                    <a  class="btn btn-slider">Be one of us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-bg-style-one">
+                <div class="container">
+                    <div class="row h-100vh">
+                        <div class="col-lg-6">
+                            <div class="banner-inner-style-one">
+                                <p data-animation-in="fadeInLeft">Let's Change</p>
+                                <h1 class="title1" data-animation-in="fadeInDown"> <span class="color-main">Life</span> Style</h1>
+                                <div class="btn-wrapper" data-animation-in="fadeInUp">
+                                    <a  class="btn btn-slider">Be one of us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-bg-style-one">
+                <div class="container">
+                    <div class="row h-100vh">
+                        <div class="col-lg-6">
+                            <div class="banner-inner-style-one">
+                                <p data-animation-in="fadeInLeft">Start YOUR</p>
+                                <h1 class="title1" data-animation-in="fadeInDown"> <span class="color-main">Gym</span> Classes</h1>
+                                <div class="btn-wrapper" data-animation-in="fadeInUp">
+                                    <a  class="btn btn-slider">Be one of us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- social icon -->
+        <!-- <ul class="social-icon">
+            <li class="icon-list">
+                <a href="#" target="_blank" class="icon-text">
+                    <i class="fa fa-twitter "></i>
+                </a>
+            </li>
+            <li class="icon-list">
+                <a href="#" target="_blank" class="icon-text">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+            </li>
+            <li class="icon-list">
+                <a href="#" target="_blank" class="icon-text">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li class="icon-list">
+                <a href="#" target="_blank" class="icon-text">
+                    <i class="fa fa-youtube"></i>
+                </a>
+            </li>
+        </ul> -->
+
+        <!-- video button -->
+        <div class="cart-btn">
+            <a ><img style="width:30px;height: 40px;margin-top: -10%" src="images/hicon.png"></a>
+        </div>
+        
+        <!-- scroll down -->
+        <div class="scroll">
+            <a href="#home-about">
+                <div class="scroll-btn">
+                    <span></span>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+
+        <div class="banner-small-slider">
+            <div class="small-slider">
+                <div class="slider-image1"><img src="assets/img/home/sm-slider/1.jpg" alt=""></div>
+                <div class="slider-image1"><img src="assets/img/home/sm-slider/2.jpg" alt=""></div>
+                <div class="slider-image1"><img src="assets/img/home/sm-slider/3.jpg" alt=""></div>
+                <div class="slider-image1"><img src="assets/img/home/sm-slider/4.jpg" alt=""></div>
+            </div>
+            <div class="controler-wrapper d-none d-lg-block">
+                <div class="progressbar">
+                    <span class="home-slider-progress"></span>
+                    <span class="home-slider-progress-active"></span> 
+                </div>
+                <span class="active-controler">01</span><span>/</span><span class="total-controler">04</span>
+            </div>
+        </div>
+    </div>
+    <!-- banner end -->
+
+
+    <!-- home-about start -->
+    <div class="home-about" id="home-about">
+
+        <div class="floating-icon1" id="service_info_item">
+            <div class="floating-icon__is1 floating-icon-info">
+                <a href="#" target="_blank" class="icon-text">
+                <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+            <!--floating-icon-is-->
+            <div class="floating-icon__is1 floating-icon-location">
+                <a href="#" target="_blank" class="icon-text">
+                <i class="fa fa-facebook-f"></i>
+            </a>
+            </div>
+            <!--floating-icon-is-->
+            <div class="floating-icon__is1 floating-icon-message">
+                <a href="#" target="_blank" class="icon-text">
+                <i class="fa fa-instagram"></i>
+            </a>
+            </div>
+            <!--floating-icon-is-->
+            <div class="floating-icon__is1 floating-icon-message">
+                <a href="#" target="_blank" class="icon-text">
+                <i class="fa fa-youtube"></i>
+                </a>
+            </div>
+            <!--floating-icon-is-->
+        </div>
+
+        <div class="floating-icon" id="service_info_item">
+            <div class="floating-icon__is floating-icon-info">
+                <i class="flaticon-phone-call"></i>
+            </div>
+            <!--floating-icon-is-->
+            <div class="floating-icon__is floating-icon-location">
+                <i class="flaticon-placeholder"></i>
+            </div>
+            <!--floating-icon-is-->
+            <div class="floating-icon__is floating-icon-message">
+                <i class="flaticon-email"></i>
+            </div>
+            <!--floating-icon-is-->
+        </div>
+        <!--floating-icon-->
+
+        
+
+        <div class="container padding-top-100 padding-bottom-94">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-5">
+                            <div class="left-content-area" id="twentytwenty-container">
+                                <img src="images/about.jpg" alt="editing company image">
+                                <img src="images/about.jpg" alt="editing company image">
+                            </div>
+                        </div>
+                        <div style="margin-top: -0.5%" class="col-lg-6 col-xl-7">
+                            <div class="about-content">
+                                <span>F5 Fitness</span>
+                                <h3 class="padding-top-3">Turn fat into fit. </h3>
+                                <p style="text-align: justify">Enter our most gruelling workout and prepare to be mentally + physically fit. Expect quick fire rounds of high-powered treadmill sessions, dynamic weight sequences and a whole of endorphins. Each session you'll burn hard in endurance and speed treadmill training, and the use of weights to suit your level, designed to mold your body and break barriers. It's experience that will challenge, inspire, burn fat and push you to exertion that you never thought was possible. </p>
+                                <p  style="text-align: justify"> F5 feature progressive programs with world class fitness equipment, trainers and nutrition counselors to help you to be fit.  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+    <!-- home-about end -->
+
+    <!-- home service start -->
+    <div class="our-service-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center padding-bottom-35">
+                        <p class="subtitle">Service we provide</p>
+                        <h1 class="title">Our Services</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service-area service-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="service-box-style-01">
+                                    <div class="sb-icon">
+                                        <a ><i class="flaticon-weight" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="sb-content">
+                                        <h4 class="title">Strength equipment</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="service-box-style-01">
+                                    <div class="sb-icon">
+                                        <a ><i class="flaticon-gym-1" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="sb-content">
+                                        <h4 class="title">Gym equipment</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="service-box-style-01">
+                                    <div class="sb-icon">
+                                        <a ><i class="flaticon-woman" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="sb-content">
+                                        <h4 class="title">Health equipment</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="service-box-style-01">
+                                    <div class="sb-icon">
+                                        <a ><i class="flaticon-weightlifting" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="sb-content">
+                                        <h4 class="title">Weight equipment</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="service-box-style-01">
+                                    <div class="sb-icon">
+                                        <a ><i class="flaticon-gym" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="sb-content">
+                                        <h4 class="title">Energy equipment</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-6 col-md-6">
+                                <div class="service-box-style-01">
+                                    <div class="sb-icon">
+                                        <a><i class="flaticon-weight-lifting" aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="sb-content">
+                                        <h4 class="title">Fitness equipment</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- home service end -->
+
+    <!-- home explore start -->
+    <div class="explore-area explore-bg margin-top-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="explore-title">
+                        <div class="title">
+                            <h2>Explore life fitness</h2>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a href="contact.html" class="btn btn-element btn-lg btn-main">Join with us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <!-- home explore end -->
+
+    <!-- popular classes start -->
+    <div class="popular-classes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title title-padding-bottom text-center">
+                        <p class="subtitle">What do you want to learn today?</p>
+                        <h1 class="title">Popular Classes</h1>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="popular-slider">
+                        <div class="single-popular-item">
+                            <div class="popular-item-style-01">
+                                <div class="thumb">
+                                    <img src="assets/img/home/popular/1.png" alt="slider1">
+                                </div>
+                                <div class="content">
+                                    <p>Muscles Build</p>
+                                </div>
+                                <div class="hover-element">
+                                    <div class="hover-top">
+                                        <span>Body Shaper</span><br>
+                                        <a  class="btn">H. Hines</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-popular-item">
+                            <div class="popular-item-style-01">
+                                <div class="thumb">
+                                    <img src="assets/img/home/popular/2.png" alt="slider1">
+                                </div>
+                                <div class="content">
+                                    <p>Body Build</p>
+                                </div>
+                                <div class="hover-element">
+                                    <div class="hover-top">
+                                        <span>Body Shaper</span><br>
+                                        <a  class="btn">Sharifur</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-popular-item">
+                            <div class="popular-item-style-01">
+                                <div class="thumb">
+                                    <img src="assets/img/home/popular/3.png" alt="slider1">
+                                </div>
+                                <div class="content">
+                                    <p>Fitness Build</p>
+                                </div>
+                                <div class="hover-element">
+                                    <div class="hover-top">
+                                        <span>Body Shaper</span><br>
+                                        <a  class="btn">Naeem</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-popular-item">
+                            <div class="popular-item-style-01">
+                                <div class="thumb">
+                                    <img src="assets/img/home/popular/4.png" alt="slider1">
+                                </div>
+                                <div class="content">
+                                    <p>Mind Refress</p>
+                                </div>
+                                <div class="hover-element">
+                                    <div class="hover-top">
+                                        <span>Body Shaper</span><br>
+                                        <a  class="btn">Janice Mcreaken</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-popular-item">
+                            <div class="popular-item-style-01">
+                                <div class="thumb">
+                                    <img src="assets/img/home/popular/1.png" alt="slider1">
+                                </div>
+                                <div class="content">
+                                    <p>Muscles Build</p>
+                                </div>
+                                <div class="hover-element">
+                                    <div class="hover-top">
+                                        <span>Body Shaper</span><br>
+                                        <a  class="btn">John Smith</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popular classes end -->
+
+    <!-- class schedule start -->
+    <div class="class-schedule padding-top-93">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center padding-bottom-47">
+                        <p class="subtitle">F5 Weekly Classes</p>
+                        <h1 class="title">Class Schedule</h1>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="row schedule-bottom schedule-bg-1">
+                    <div class="col-lg-12 col-xl-8">
+                        <div class="d-flex justify-content-lg-around flex-column flex-lg-row align-items-center text-center">
+                            <div class="form-field margin-top-10 margin-bottom-10">
+                                <!--Date Picker-->
+                                <input type="text" name="Name" placeholder="Name" class="form">
+                            </div>
+                            <div class="form-field margin-top-10 margin-bottom-10">
+                                <input type="text" name="mobile" class="form" placeholder="Phone Number">
+                            </div>
+                            <div class="btn-wrapper margin-top-10 margin-bottom-10">
+                                <a href="contact.html" class="btn btn-element btn-normal-size btn-main-color btn-rounded">Find Class → </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div><br><br>
+    <!-- class schedule end -->
+
+    <!-- partner-area start -->
+    <div class="partner-area">
+        <div class="container">
+            <div class="row">
+                
+                    <div class="thumb">
+                        <img src="assets/img/home/partner1.jpg" alt="partner" >
+                    
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <!-- partner-area end -->
+    <!-- home shopping start -->
+    <div class="shopping-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title padding-top-93 padding-bottom-60 text-center">
+                        <h1 class="title">Gym Equipment </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 shopping-slider shopping-slider-item text-center">
+                    <div class="shop-single-item">
+                        <div class="top-content">
+                            <div class="thumb">
+                                <img src="assets/img/home/shopping/1.png" alt="shopping">
+                            </div>
+                        </div>
+                        <div class="bottom-content">
+                            <p class="subtitle">Fitness, Accessories</p>
+                            <h3>Free Dumbbell Ball</h3>
+                            <p class="price">
+                        </div>
+                    </div>
+                    <div class="shop-single-item">
+                        <div class="top-content">
+                            <div class="thumb">
+                                <img src="assets/img/home/shopping/2.png" alt="shopping">
+                            </div>
+                        </div>
+                        <div class="bottom-content">
+                            <p class="subtitle">Gym, Accessories</p>
+                            <h3>Incline Bench Press</h3>
+                        </div>
+                    </div>
+                    <div class="shop-single-item">
+                        <div class="top-content">
+                            <div class="thumb">
+                                <img src="assets/img/home/shopping/3.png" alt="shopping">
+                            </div>
+                        </div>
+                        <div class="bottom-content">
+                            <p class="subtitle">Health, Accessories</p>
+                            <h3>Pec Deck Machine</h3>
+                        </div>
+                    </div>
+                    <div class="shop-single-item">
+                        <div class="top-content">
+                            <div class="thumb">
+                                <img src="assets/img/home/shopping/4.png" alt="shopping">
+                            </div>
+                        </div>
+                        <div class="bottom-content">
+                            <p class="subtitle">Weight, Accessories</p>
+                            <h3>Pull-Down Machine</h3>
+                        </div>
+                    </div>
+                    <div class="shop-single-item">
+                        <div class="top-content">
+                            <div class="thumb">
+                                <img src="assets/img/home/shopping/5.png" alt="shopping">
+                            </div>
+                        </div>
+                        <div class="bottom-content">
+                            <p class="subtitle">Yoga, Accessories</p>
+                            <h3>Inclined Bench Press</h3>
+                        </div>
+                    </div>
+                    <div class="shop-single-item">
+                        <div class="top-content">
+                            <div class="thumb">
+                                <img src="assets/img/home/shopping/12.png" alt="shopping">
+                            </div>
+                        </div>
+                        <div class="bottom-content">
+                            <p class="subtitle">Health, Accessories</p>
+                            <h3>Hammer Strength</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- home shopping end -->
+
+    <!-- shaper-area start -->
+    <div class="shaper-area padding-top-85">
+        <div  class="container">
+            <div class="row">
+                <div class="column1 b1">
+                    <img class="section-title title-padding-bottom text-center" src="assets/img/home/left1.jpg" alt="Snow" style="width:100%">
+                    <div class="btn-wrapper margin-top-10 margin-bottom-10">
+                        <a href="contact.html" class="btn2 btn-element btn-normal-size btn-main-color btn-rounded">Join Now</a>
+                    </div>
+                  
+                </div>
+               
+                <div class="column1 b1">
+                    <img class="section-title title-padding-bottom text-center" src="assets/img/home/right1.jpg" alt="Forest" style="width:100%">
+                
+                    <div class="btn-wrapper margin-top-10 margin-bottom-10">
+                        <a href="contact.html" class="btn1 btn-element btn-normal-size btn-main-color btn-rounded">Join Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- shaper-area end -->
+    <!-- client start -->
+    <div class="client-area margin-top-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title title-padding-bottom text-center">
+                        <p class="subtitle">F5 Testimonial</p>
+                        <h1 class="title">Our Clients Say's</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+            <div class="item quote-style-1">
+                <div class="content">
+                    <h1>Arpita paul</h1>
+                    <p>"This gym has just what i need. I tend to work out in the morning. When it's not crowded. So i never had to wait for equipment. Additionally, i found the right trainer. Who helped me to reach my fitness goal for the month."</p>
+                </div>
+            </div>
+            <div class="item quote-style-1">
+                <div class="content">
+                    <h1>Susmita sen</h1>
+                    <p>"Thanks to the F5 Fitness Good team for the goodwill gesture and for creating a fun workout environment. Loving all the new equipment. Happy to have you open and enjoying the experience."</p>
+                </div>
+            </div>
+            <div class="item quote-style-1">
+                <div class="content">
+                    <h1>Dipa talukdar</h1>
+                    <p>"I have had amazing success with the Daily Routine Fitness, Team has helped me refine my approach to workouts, nutrition and overall motivation."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- client end -->
+    <!-- footer area start -->
+    <footer class="footer-area footer-style-1 black-bg padding-top-160">
+        <div class="footer-top padding-top-30 padding-bottom-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-4 col-md-6">
+                        <div class="footer-widget widget">
+                            <a href="index.html" class="footer-logo"> 
+                                <h4 class="widget-title">F5 Fitness</h4>
+                            </a>
+                            <ul class="contact_info_list">
+                                <li class="single-info-item">
+                                    <div class="icon">
+                                        <i class="flaticon-phone-call"></i>
+                                    </div>
+                                    <div class="details">
+                                        +91 98455 40704
+                                    </div>
+                                </li>
+                                <li class="single-info-item">
+                                    <div class="icon">
+                                        <i class="flaticon-placeholder"></i>
+                                    </div>
+                                    <div class="details">
+                                        RVC Tower #310, 2nd Floor,<br>
+                                        Kalkere K. Channasandra Main Road, <br>
+                                        Next to Kalkere Bus Stand Bengaluru - 560 043
+                                    </div>
+                                </li>
+                                <li class="single-info-item">
+                                    <div class="icon">
+                                        <i class="flaticon-email"></i>
+                                    </div>
+                                    <div class="details">
+                                        info@f5fitnesscenter.com
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-3 col-md-6">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title">Location</h4>
+                            <div style="width: 100%"><iframe width="100%" height="250" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=RVC%20Tower%20%23310%2C%202nd%20Floor%2C%20Kalkere%20K.%20Channasandra%20Main%20Road%2C%20Next%20to%20Kalkere%20Bus%20Stand%20Bengaluru+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/coordinates.html">gps coordinates</a></iframe></div><br />
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-xl-4 col-md-12 offset-xl-1">
+                        <div class="footer-widget widget">
+                            <h4 class="widget-title">Stay in Touch</h4>
+                            <p class="description">Subscribe to our newsletter to get updated on our latest Offers</p>
+                            <div class="subscribe-form">
+                                <div class="input-group margin-top-30">
+                                    <input type="text" class="form-control" placeholder="Enter your email address">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default submit-btn" type="button">Subscribe</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-area-inner copyright-sm margin-top-30">
+                            © F5 <span style="color: #88C13E;"> FITNESS </span> 2020 All rights reserved.<br>
+                            Developed by <a href="http://tedroox.com/">Tedroo<span style="color: rgb(223, 129, 52);">X</span></a> Technologies Private Limited.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <!-- popper -->
+    <script src="assets/js/popper.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- magnific popup -->
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <!-- wow -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- nice select -->
+    <script src="assets/js/nice-select.js"></script>
+    <!-- owl carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Slick -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- Slick Animation -->
+    <script src="assets/js/slick-animation.js"></script>
+    <!-- jquery.twentytwenty -->
+    <script src="assets/js/jquery.twentytwenty.js"></script>
+    <script src="assets/js/jquery.event.move.js"></script>
+    <!-- waypoint -->
+    <script src="assets/js/waypoints.min.js"></script>
+     <!-- Date Picker -->
+     <script src="assets/js/datepicker.min.js"></script>
+     <script src="assets/js/datepicker.en.js"></script>
+     <!-- Time Picker -->
+     <script src="assets/js/wickedpicker.min.js"></script>
+    <!-- counterup -->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!-- imageloaded -->
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <!-- isotope -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+     <!-- rProgressbar -->
+    <script src="assets/js/jQuery.rProgressbar.min.js"></script>
+    <script src="assets/js/timepicker.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
